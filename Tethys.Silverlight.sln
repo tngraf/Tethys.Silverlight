@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tethys.Silverlight.WP8.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{8EEDA502-40B6-4195-AF99-5DB6AA802F90}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\My Open Source Projects\OBD.Net\GlobalAssemblyInfo.cs = ..\..\..\..\My Open Source Projects\OBD.Net\GlobalAssemblyInfo.cs
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
 	EndProjectSection
 EndProject
 Global

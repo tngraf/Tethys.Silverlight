@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97046578-3801-4409-AE24-B9F3844CCEFF}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tethys.Silverlight</RootNamespace>
+    <AssemblyName>Tethys.Silverlight.WP71</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\debug\wp71\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;CODE_ANALYSIS</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Export\release\wp71\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\My Open Source Projects\OBD.Net\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Config\AppStartReason.cs">
+      <Link>Config\AppStartReason.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Config\IAppConfig.cs">
+      <Link>Config\IAppConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\BooleanToHiddenConverter.cs">
+      <Link>Converter\BooleanToHiddenConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\BooleanToVisibilityConverter.cs">
+      <Link>Converter\BooleanToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\EnumToBooleanConverter.cs">
+      <Link>Converter\EnumToBooleanConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\NullToVisibilityConverter.cs">
+      <Link>Converter\NullToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringNullOrEmptyToVisibilityConverter.cs">
+      <Link>Converter\StringNullOrEmptyToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringToVisibilityConverter.cs">
+      <Link>Converter\StringToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CRC16.cs">
+      <Link>Cryptography\CRC16.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CRC32.cs">
+      <Link>Cryptography\CRC32.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CryptSupport.cs">
+      <Link>Cryptography\CryptSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\HashSupport.cs">
+      <Link>Cryptography\HashSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\MD5.cs">
+      <Link>Cryptography\MD5.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\Rijndael.cs">
+      <Link>Cryptography\Rijndael.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\XCRC.cs">
+      <Link>Cryptography\XCRC.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\MVVM\DelegateCommand.cs">
+      <Link>MVVM\DelegateCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\MVVM\ViewModelBase.cs">
+      <Link>MVVM\ViewModelBase.cs</Link>
+    </Compile>
+    <Compile Include="Config\AppConfigBase.cs" />
+    <Compile Include="Controls\TiltEffect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

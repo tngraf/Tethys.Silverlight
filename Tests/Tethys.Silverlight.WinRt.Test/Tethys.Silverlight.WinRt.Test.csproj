@@ -109,7 +109,7 @@
     <SDKReference Include="TestPlatform, Version=11.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\..\My Open Source Projects\OBD.Net\GlobalAssemblyInfo.cs">
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="CRC16Test.cs" />

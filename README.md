@@ -3,6 +3,9 @@ Tethys.Silverlight
 
 Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 
+## Project Build Status ##
+[![Build status](https://ci.appveyor.com/api/projects/status/gcw8uf9lhqaefni9?svg=true)](https://ci.appveyor.com/project/tngraf/tethys-silverlight)
+
 ## Solution Overview ##
 
 * Tethys.Silverlight.SL4 - library version for Slilverlight 4

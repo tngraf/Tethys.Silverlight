@@ -26,6 +26,7 @@
 
 namespace Tethys.Silverlight.MVVM
 {
+    using System;
     using System.ComponentModel;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.CompilerServices;
@@ -59,6 +60,7 @@ namespace Tethys.Silverlight.MVVM
         [SuppressMessage(
           "Microsoft.Performance", "CA1822:MarkMembersAsStatic",
           Justification = "This is needed for data binding")]
+        [Obsolete("Not to be used any longer", true)]
         public bool IsInDesignMode
         {
             get
@@ -74,28 +76,28 @@ namespace Tethys.Silverlight.MVVM
           "Microsoft.Security",
           "CA2122:DoNotIndirectlyExposeMethodsWithLinkDemands",
           Justification = "This is still the best solution.")]
+        [Obsolete("Not to be used any longer", true)]
         public static bool IsInDesignModeStatic
         {
             get
             {
                 if (!isInDesignMode.HasValue)
                 {
-#if SILVERLIGHT
+#if SILVERLIGHT || SILVERLIGHT3 || WINDOWS_PHONE
                     isInDesignMode = DesignerProperties.IsInDesignTool;
 #else
 #if NETFX_CORE
-          isInDesignMode = Windows.ApplicationModel.DesignMode.DesignModeEnabled;
+                    isInDesignMode = Windows.ApplicationModel.DesignMode.DesignModeEnabled;
 #else
-          var prop = DesignerProperties.IsInDesignModeProperty;
-          isInDesignMode = (bool)DependencyPropertyDescriptor
-            .FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
+                    var prop = DesignerProperties.IsInDesignModeProperty;
+                    isInDesignMode = (bool)DependencyPropertyDescriptor.FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
 #endif
 #endif
                 } // if
 
                 return isInDesignMode.Value;
             }
-        }
+        } // IsInDesignModeStatic
         #endregion // PUBLIC PROPERTIES
 
         //// ---------------------------------------------------------------------

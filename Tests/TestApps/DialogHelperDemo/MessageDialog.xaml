@@ -1,14 +1,14 @@
 ﻿<Window x:Class="WpfLayoutDemo.MessageDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:Windows="clr-namespace:TgLib.Windows;assembly=TgLib.WPF"
+        xmlns:Support="clr-namespace:Tethys.Silverlight.Support;assembly=Tethys.Silverlight.WPF"
         Title="MessageDialog"
         Background="{StaticResource {x:Static SystemColors.ControlBrushKey}}"
         ResizeMode="NoResize"
         SizeToContent="WidthAndHeight"
-        Windows:DialogHelper.ShowMaximizeButton="False"
-        Windows:DialogHelper.ShowMinimizeButton="False"
-        Windows:DialogHelper.HideIcon="True">
+        Support:DialogHelper.ShowMaximizeButton="False"
+        Support:DialogHelper.ShowMinimizeButton="False"
+        Support:DialogHelper.HideIcon="True">
   <Grid>
     <!--  General size definition, to be moved to Application.Resources  -->
     <Grid.Resources>

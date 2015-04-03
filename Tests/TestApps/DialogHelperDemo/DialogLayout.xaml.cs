@@ -1,26 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿#region Header
+// --------------------------------------------------------------------------
+// Tethys.Silverlight
+// ==========================================================================
+//
+// This library contains common code for WPF, Silverlight, Windows Phone and
+// Windows 8 projects.
+//
+// ===========================================================================
+//
+// <copyright file="DialogLayout.xaml.cs" company="Tethys">
+// Copyright  2010-2015 by Thomas Graf
+//            All rights reserved.
+//            Licensed under the Apache License, Version 2.0.
+//            Unless required by applicable law or agreed to in writing, 
+//            software distributed under the License is distributed on an
+//            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+//            either express or implied. 
+// </copyright>
+//
+// ---------------------------------------------------------------------------
+#endregion
 
 namespace WpfLayoutDemo
 {
-  /// <summary>
-  /// Interaction logic for DialogLayout.xaml
-  /// </summary>
-  public partial class DialogLayout : Window
-  {
-    public DialogLayout()
+    /// <summary>
+    /// Interaction logic for DialogLayout.
+    /// </summary>
+    public partial class DialogLayout
     {
-      InitializeComponent();
-    }
-  }
-}
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DialogLayout"/> class.
+        /// </summary>
+        public DialogLayout()
+        {
+            InitializeComponent();
+        } // DialogLayout()
+    } // DialogLayout
+} // WpfLayoutDemo

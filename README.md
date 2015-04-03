@@ -12,7 +12,6 @@ Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 * Tethys.Silverlight.SL5 - library version for Slilverlight 5
 * Tethys.Silverlight.WinRt - library version for Windows RT apps
 * Tethys.Silverlight.WP8 - library version for Windows Phone 8
-* Tethys.Silverlight.WP71 - library version for Windows Phone 71
 * Tethys.Silverlight.WPF - library version for WPF
 
 ## Main Features ##
@@ -33,7 +32,7 @@ Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 * WINDOWS       ==> Windows platform
 * NETFX_CORE    ==> Windows 8 / WinRT / Metro applications
 * WINDOWS_PHONE ==> Windows Phone platform
-* SILVERLIGHT   ==> Silverlight platofrm
+* SILVERLIGHT   ==> Silverlight platform
 * NET45         ==> .Net version 4.5 and later
 
 ## Thanks ##

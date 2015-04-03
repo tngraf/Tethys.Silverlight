@@ -147,6 +147,9 @@
     <Compile Include="..\Tethys.Silverlight.WPF\MVVM\DelegateCommand.cs">
       <Link>MVVM\DelegateCommand.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\MVVM\DesignTime.cs">
+      <Link>MVVM\DesignTime.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\MVVM\ViewModelBase.cs">
       <Link>MVVM\ViewModelBase.cs</Link>
     </Compile>

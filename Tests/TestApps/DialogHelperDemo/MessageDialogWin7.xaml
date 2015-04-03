@@ -1,12 +1,12 @@
 ﻿<Window x:Class="WpfLayoutDemo.MessageDialogWin7"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:Windows="clr-namespace:TgLib.Windows;assembly=TgLib.WPF"
+        xmlns:Support="clr-namespace:Tethys.Silverlight.Support;assembly=Tethys.Silverlight.WPF"
         Title="Message Dialog (Windows 7)"
         ResizeMode="NoResize"
         SizeToContent="WidthAndHeight"
-        Windows:DialogHelper.ShowMaximizeButton="False"
-        Windows:DialogHelper.ShowMinimizeButton="False">
+        Support:DialogHelper.ShowMaximizeButton="False"
+        Support:DialogHelper.ShowMinimizeButton="False">
   <Grid>
     <!--  General size definition, to be moved to Application.Resources  -->
     <Grid.Resources>

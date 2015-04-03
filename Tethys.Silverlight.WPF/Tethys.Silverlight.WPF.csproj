@@ -108,6 +108,7 @@
     <Compile Include="Media\Conversion.cs" />
     <Compile Include="MVVM\DelegateCommand.cs" />
     <Compile Include="MVVM\DelegateCommandEx.cs" />
+    <Compile Include="MVVM\DesignTime.cs" />
     <Compile Include="MVVM\SafeObservableCollection.cs" />
     <Compile Include="MVVM\ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

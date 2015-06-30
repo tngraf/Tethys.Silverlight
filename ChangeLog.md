@@ -5,7 +5,7 @@ Tethys.Silverlight Change Log
 * Windows Phone 7.1 support cancelled.
 * Existing test application in solution included.
 * There is a new static class DesignTime to hold
-  the property `IsInDesignMode`. The old implemntation
+  the property `IsInDesignMode`. The old implementation
   in `ViewModelBase` has been marked obsolete.
 
 ##V1.2.0	(2015-01-04)##

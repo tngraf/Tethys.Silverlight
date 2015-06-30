@@ -104,6 +104,9 @@
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\BooleanToVisibilityConverter.cs">
       <Link>Converter\BooleanToVisibilityConverter.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\DateTimeConverter.cs">
+      <Link>Converter\DateTimeConverter.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\DoubleToColorConverter.cs">
       <Link>Converter\DoubleToColorConverter.cs</Link>
     </Compile>
@@ -113,14 +116,32 @@
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\GridLengthConverter.cs">
       <Link>Converter\GridLengthConverter.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\InverseBooleanConverter.cs">
+      <Link>Converter\InverseBooleanConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\InverseBooleanToVisibilityConverter.cs">
+      <Link>Converter\InverseBooleanToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\MultiplyConverter.cs">
+      <Link>Converter\MultiplyConverter.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\NullToVisibilityConverter.cs">
       <Link>Converter\NullToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringFormatConverter.cs">
+      <Link>Converter\StringFormatConverter.cs</Link>
     </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringNullOrEmptyToVisibilityConverter.cs">
       <Link>Converter\StringNullOrEmptyToVisibilityConverter.cs</Link>
     </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringToVisibilityConverter.cs">
       <Link>Converter\StringToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\VisibleWhenPhoneConverter.cs">
+      <Link>Converter\VisibleWhenPhoneConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Converter\VisibleWhenWindowsConverter.cs">
+      <Link>Converter\VisibleWhenWindowsConverter.cs</Link>
     </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CRC16.cs">
       <Link>Cryptography\CRC16.cs</Link>

@@ -39,16 +39,6 @@ namespace Tethys.Silverlight.Support
     /// </summary>
     public static class DialogHelper
     {
-        #region WIN32 INTEROP
-        
-
-        
-
-        
-        #endregion // WIN32 INTEROP
-
-        //// ----------------------------------------------------------------------
-
         #region PROPERTIES
 
         #region ShowMinimizeButton

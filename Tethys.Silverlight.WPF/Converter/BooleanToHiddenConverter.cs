@@ -54,7 +54,8 @@ namespace Tethys.Silverlight.Converter
         /// <returns>
         /// A converted value. If the method returns null, the valid null value is used.
         /// </returns>
-        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes",
+            Justification = "This is ok here")]
         public object Convert(object value, Type targetType, object parameter,
           System.Globalization.CultureInfo culture)
         {

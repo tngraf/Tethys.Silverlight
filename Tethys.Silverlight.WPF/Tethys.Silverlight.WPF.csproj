@@ -94,6 +94,7 @@
     <Compile Include="Converter\UriToImageConverter.cs" />
     <Compile Include="Converter\VisibleWhenPhoneConverter.cs" />
     <Compile Include="Converter\VisibleWhenWindowsConverter.cs" />
+    <Compile Include="Cryptography\Aes.cs" />
     <Compile Include="Cryptography\Rijndael.cs" />
     <Compile Include="Cryptography\CRC16.cs" />
     <Compile Include="Cryptography\CRC32.cs" />

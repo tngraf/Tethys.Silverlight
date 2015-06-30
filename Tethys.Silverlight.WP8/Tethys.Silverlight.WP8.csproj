@@ -143,6 +143,9 @@
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\VisibleWhenWindowsConverter.cs">
       <Link>Converter\VisibleWhenWindowsConverter.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\Aes.cs">
+      <Link>Cryptography\Aes.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CRC16.cs">
       <Link>Cryptography\CRC16.cs</Link>
     </Compile>
@@ -181,6 +184,7 @@
     <Compile Include="Behavior\PageLoadedBehavior.cs" />
     <Compile Include="Behavior\UpdateSourceOnTextChangedBehavior.cs" />
     <Compile Include="Config\AppConfigBase.cs" />
+    <Compile Include="Controls\TreeHelpers.cs" />
     <Compile Include="Controls\TiltEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

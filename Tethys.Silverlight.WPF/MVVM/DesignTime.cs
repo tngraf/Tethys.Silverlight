@@ -30,6 +30,9 @@ namespace Tethys.Silverlight.MVVM
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
 
+    /// <summary>
+    /// Static class for design time information.
+    /// </summary>
     public static class DesignTime
     {
         /// <summary>
@@ -50,7 +53,7 @@ namespace Tethys.Silverlight.MVVM
                 return Windows.ApplicationModel.DesignMode.DesignModeEnabled;
   #else
                 var prop = DesignerProperties.IsInDesignModeProperty;
-                return  (bool)DependencyPropertyDescriptor
+                return (bool)DependencyPropertyDescriptor
                     .FromProperty(prop, typeof(FrameworkElement))
                     .Metadata.DefaultValue;
   #endif

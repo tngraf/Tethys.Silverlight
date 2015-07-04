@@ -8,7 +8,7 @@
 //
 // ===========================================================================
 //
-// <copyright file="BooleanToHiddenConverter.cs" company="Tethys">
+// <copyright file="VisibleWhenWindowsConverter.cs" company="Tethys">
 // Copyright  2010-2015 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
@@ -27,23 +27,21 @@
 namespace Tethys.Silverlight.Converter
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
 #if NETFX_CORE
-  using Windows.UI.Xaml;
-  using Windows.UI.Xaml.Data;
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Data;
 #else
     using System.Windows;
     using System.Windows.Data;
-#endif
+#endif    
 
     /// <summary>
-    /// Converts a boolean value to a Visibility value required by XAML.
-    /// <para />
-    /// Boolean == true => Visibility = Collapsed
-    /// Boolean == false => Visibility = Visible
+    /// A converter that returns <c>Visibility.Visible</c> if the current app is
+    /// running on Windows; otherwise <c>Visibility.Collapsed</c> is returned.
     /// </summary>
-    public class BooleanToHiddenConverter : IValueConverter
+    public class VisibleWhenWindowsConverter : IValueConverter
     {
+        #region IVALUECONVERTER MEMBERS
         /// <summary>
         /// Converts a value.
         /// </summary>
@@ -54,62 +52,15 @@ namespace Tethys.Silverlight.Converter
         /// <returns>
         /// A converted value. If the method returns null, the valid null value is used.
         /// </returns>
-        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes",
-            Justification = "This is ok here")]
         public object Convert(object value, Type targetType, object parameter,
           System.Globalization.CultureInfo culture)
         {
-            var rv = Visibility.Collapsed;
-            try
-            {
-                var x = bool.Parse(value.ToString());
-                rv = x ? Visibility.Collapsed : Visibility.Visible;
-            }
-            // ReSharper disable EmptyGeneralCatchClause
-            catch
-            // ReSharper restore EmptyGeneralCatchClause
-            {
-                // ignore
-            } // if
-
-            return rv;
-        } // Convert()
-
-#if NETFX_CORE
-        /// <summary>
-        /// Converts the specified value.
-        /// </summary>
-        /// <param name="value">The value.</param>
-        /// <param name="targetType">Type of the target.</param>
-        /// <param name="parameter">The parameter.</param>
-        /// <param name="text">The text.</param>
-        /// <returns>
-        /// A converted value. If the method returns null, the valid null value is used.
-        /// </returns>
-        public object Convert(object value, Type targetType, object parameter,
-          string text)
-        {
-          return this.Convert(value, targetType, parameter, 
-            System.Globalization.CultureInfo.InvariantCulture);
-        } // Convert()
-
-        /// <summary>
-        /// Converts a value back.
-        /// </summary>
-        /// <param name="value">The value.</param>
-        /// <param name="targetType">Type of the target.</param>
-        /// <param name="parameter">The parameter.</param>
-        /// <param name="text">The text.</param>
-        /// <returns>
-        /// A converted value. If the method returns null, the valid null value is used.
-        /// </returns>
-        public object ConvertBack(object value, Type targetType, object parameter,
-          string text)
-        {
-          return this.ConvertBack(value, targetType, parameter, 
-            System.Globalization.CultureInfo.InvariantCulture);
-        } // ConvertBack()
+#if WINDOWS_APP
+            return Visibility.Visible;
+#else
+            return Visibility.Collapsed;
 #endif
+        } // Convert()
 
         /// <summary>
         /// Converts a value back.
@@ -124,7 +75,44 @@ namespace Tethys.Silverlight.Converter
         public object ConvertBack(object value, Type targetType, object parameter,
           System.Globalization.CultureInfo culture)
         {
-            return value;
+            throw new NotImplementedException();
         } // ConvertBack()
-    } // BooleanToHiddenConverter
+
+#if NETFX_CORE
+        /// <summary>
+        /// Converts the specified value.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="targetType">Type of the target.</param>
+        /// <param name="parameter">The parameter.</param>
+        /// <param name="language">The language.</param>
+        /// <returns>
+        /// A converted value. If the method returns null, the valid null value is used.
+        /// </returns>
+        public object Convert(object value, Type targetType, object parameter,
+          string language)
+        {
+            return this.Convert(value, targetType, parameter, 
+                System.Globalization.CultureInfo.InvariantCulture);
+        } // Convert()
+
+        /// <summary>
+        /// Converts a value back.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="targetType">Type of the target.</param>
+        /// <param name="parameter">The parameter.</param>
+        /// <param name="language">The language.</param>
+        /// <returns>
+        /// A converted value. If the method returns null, the valid null value is used.
+        /// </returns>
+        public object ConvertBack(object value, Type targetType, object parameter,
+          string language)
+        {
+            return this.ConvertBack(value, targetType, parameter, 
+                System.Globalization.CultureInfo.InvariantCulture);
+        } // ConvertBack()
+#endif
+        #endregion // IVALUECONVERTER MEMBERS
+    } // VisibleWhenWindowsConverter
 } // Tethys.Silverlight.Converter

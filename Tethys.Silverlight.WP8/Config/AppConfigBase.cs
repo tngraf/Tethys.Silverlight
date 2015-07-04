@@ -32,15 +32,16 @@ namespace Tethys.Silverlight.Config
     using System.IO.IsolatedStorage;
 
     /// <summary>
-    /// abstract base class for application configuration.
+    /// Abstract base class for application configuration.
     /// </summary>
     public abstract class AppConfigBase
     {
         #region PROTECTED PROPERTIES
         /// <summary>
-        /// Our isolated storage settings.
+        /// Gets or sets the isolated storage settings.
         /// </summary>
-        protected IsolatedStorageSettings isolatedStore;
+        // ReSharper disable once InconsistentNaming
+        protected IsolatedStorageSettings isolatedStore { get; set; }
         #endregion // PROTECTED PROPERTIES
 
         //// ---------------------------------------------------------------------

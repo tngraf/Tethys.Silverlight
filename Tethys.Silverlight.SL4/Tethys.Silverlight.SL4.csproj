@@ -96,6 +96,9 @@
     <Compile Include="..\Tethys.Silverlight.WPF\Converter\StringToVisibilityConverter.cs">
       <Link>Converter\StringToVisibilityConverter.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\Aes.cs">
+      <Link>Cryptography\Aes.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Cryptography\CRC16.cs">
       <Link>Cryptography\CRC16.cs</Link>
     </Compile>

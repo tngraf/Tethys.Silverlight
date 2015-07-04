@@ -24,10 +24,9 @@
 // ---------------------------------------------------------------------------
 #endregion
 
-using System;
-
 namespace Tethys.Silverlight.Helper
 {
+    using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.InteropServices;
 
@@ -91,13 +90,54 @@ namespace Tethys.Silverlight.Helper
         /// </summary>
         public const uint Seticon = 0x0080;
 
+        /// <summary>
+        /// Retrieves information about the specified window. The function also retrieves 
+        /// the 32-bit (DWORD) value at the specified offset into the extra window memory. 
+        /// </summary>
+        /// <param name="window">The window.</param>
+        /// <param name="index">The index.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is the requested value.
+        /// If the function fails, the return value is zero. To get extended error 
+        /// information, call <c>GetLastError</c>. 
+        /// </returns>
         [DllImport("user32.dll")]
         public static extern int GetWindowLong(IntPtr window, int index);
 
+        /// <summary>
+        /// Changes an attribute of the specified window. The function also sets the 
+        /// 32-bit (long) value at the specified offset into the extra window memory.
+        /// </summary>
+        /// <param name="window">The window.</param>
+        /// <param name="index">The index.</param>
+        /// <param name="newLong">The new long value.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is the requested value.
+        /// If the function fails, the return value is zero. To get extended error 
+        /// information, call <c>GetLastError</c>.
+        /// </returns>
         [DllImport("user32.dll")]
         public static extern int SetWindowLong(IntPtr window, int index,
             int newLong);
 
+        /// <summary>
+        /// Changes the size, position, and Z order of a child, pop-up, or top-level
+        /// window. These windows are ordered according to their appearance on the 
+        /// screen. The topmost window receives the highest rank and is the first 
+        /// window in the Z order.
+        /// </summary>
+        /// <param name="window">The window.</param>
+        /// <param name="windowInsertAfter">The window insert after.</param>
+        /// <param name="x">The x coordinate.</param>
+        /// <param name="y">The y coordinate.</param>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        /// <param name="flags">The flags.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is the requested value.
+        /// If the function fails, the return value is zero. To get extended error 
+        /// information, call <c>GetLastError</c>.
+        /// </returns>
         [DllImport("user32.dll")]
         [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", 
             MessageId = "x", Justification = "This IS correct")]
@@ -106,6 +146,19 @@ namespace Tethys.Silverlight.Helper
         public static extern bool SetWindowPos(IntPtr window, IntPtr windowInsertAfter,
             int x, int y, int width, int height, uint flags);
 
+        /// <summary>
+        /// Sends the specified message to a window or windows. The SendMessage 
+        /// function calls the window procedure for the specified window and does 
+        /// not return until the window procedure has processed the message.
+        /// </summary>
+        /// <param name="window">The window.</param>
+        /// <param name="msg">The message to be sent.</param>
+        /// <param name="wParam">The word parameter.</param>
+        /// <param name="lParam">The long parameter.</param>
+        /// <returns>
+        /// The return value specifies the result of the message processing; 
+        /// it depends on the message sent.
+        /// </returns>
         [DllImport("user32.dll")]
         [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly",
             MessageId = "wParam", Justification = "This is Windows standard")]

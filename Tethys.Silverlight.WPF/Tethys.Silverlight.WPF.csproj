@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="Behavior\ControlLoadedBehavior.cs" />
     <Compile Include="Behavior\FocusBehavior.cs" />
+    <Compile Include="Behavior\LostFocusBehavior.cs" />
     <Compile Include="Behavior\TreeViewItemBehavior.cs" />
     <Compile Include="Behavior\WindowActivatedBehavior.cs" />
     <Compile Include="Behavior\WindowClosingBehavior.cs" />

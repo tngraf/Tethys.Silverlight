@@ -89,6 +89,9 @@
     <Compile Include="..\Tethys.Silverlight.WPF\Behavior\ControlLoadedBehavior.cs">
       <Link>Behavior\ControlLoadedBehavior.cs</Link>
     </Compile>
+    <Compile Include="..\Tethys.Silverlight.WPF\Behavior\LostFocusBehavior.cs">
+      <Link>Behavior\LostFocusBehavior.cs</Link>
+    </Compile>
     <Compile Include="..\Tethys.Silverlight.WPF\Config\AppStartReason.cs">
       <Link>Config\AppStartReason.cs</Link>
     </Compile>

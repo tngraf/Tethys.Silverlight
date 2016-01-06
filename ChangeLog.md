@@ -1,6 +1,10 @@
 Tethys.Silverlight Change Log
 =============================
 
+##V1.2.2	(2016-01-06)##
+* Silverlight 4 support cancelled.
+* Silverlight 5 support cancelled.
+
 ##V1.2.1	(2015-04-03)##
 * Windows Phone 7.1 support cancelled.
 * Existing test application in solution included.

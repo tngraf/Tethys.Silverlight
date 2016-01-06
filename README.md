@@ -8,8 +8,8 @@ Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 
 ## Solution Overview ##
 
-* Tethys.Silverlight.SL4 - library version for Slilverlight 4
-* Tethys.Silverlight.SL5 - library version for Slilverlight 5
+* Tethys.Silverlight.SL4 - library version for Silverlight 4
+* Tethys.Silverlight.SL5 - library version for Silverlight 5
 * Tethys.Silverlight.WinRt - library version for Windows RT apps
 * Tethys.Silverlight.WP8 - library version for Windows Phone 8
 * Tethys.Silverlight.WPF - library version for WPF
@@ -26,7 +26,7 @@ Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 
 ### Requisites ###
 
-* Visual Studio 2013
+* Visual Studio 2015
 
 ### Symbols for conditional compilation ###
 * WINDOWS       ==> Windows platform
@@ -45,7 +45,7 @@ Not all code is from me. Code parts are from:
 
 ## Copyright & License ##
 
-Copyright 2010-2015 T. Graf
+Copyright 2010-2016 T. Graf
 
 Licensed under the **Apache License, Version 2.0** (the "License");
 you may not use this file except in compliance with the License.

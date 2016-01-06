@@ -8,10 +8,11 @@
         Height="548"
         MinWidth="440"
         MinHeight="230"
-        Icon="../Resources/error.ico"
+        Icon="/Tethys.Silverlight.WPF;component/Resources/error.ico"
         ResizeMode="CanResize"
         ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen">
+    
   <Grid x:Name="LayoutRoot">
     <Grid.RowDefinitions>
       <RowDefinition Height="65" />
@@ -45,7 +46,7 @@
                 Grid.ColumnSpan="2"
                 Margin="0,8,50,8"
                 Orientation="Horizontal">
-      <Image Source="../Resources/error.png" />
+            <Image Source="/Tethys.Silverlight.WPF;component/Resources/error.png" />
       <TextBlock Name="titleTextBlock"
                  Margin="10,0,0,0"
                  HorizontalAlignment="Left"

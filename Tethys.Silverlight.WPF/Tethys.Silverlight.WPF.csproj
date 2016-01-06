@@ -131,8 +131,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\error.ico" />
-    <Content Include="Resources\error.png" />
+    <Resource Include="Resources\error.ico" />
+    <Resource Include="Resources\error.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Thumbs.db" />

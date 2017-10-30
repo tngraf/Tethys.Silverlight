@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tethys.Silverlight.WinRt</id>
+    <version>1.2.2</version>
+    <title>Tethys.Silverlight.WinRt</title>
+    <authors>Thomas Graf</authors>
+    <owners>Thomas Graf</owners>
+	<copyright>Copyright (C) 2009-2017 T. Graf</copyright>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/tngraf/Tethys.Silverlight/</projectUrl>
+    <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic Services and Resources Library for Silverlight and WPF</description>
+    <releaseNotes></releaseNotes>
+    <language>en-US</language>
+    <tags>Tethys Silverlight WPF WinRT</tags>
+  </metadata>
+  <files>
+    <file src="..\Export\Release\Tethys.Logging.xml" target="lib\portable-win+net40+sl40+wp" />
+	<file src="..\Export\Release\Tethys.Logging.pdb" target="lib\portable-win+net40+sl40+wp" />
+  </files> 
+</package>

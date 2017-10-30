@@ -43,7 +43,7 @@ Not all code is from me. Code parts are from:
 
 ## Copyright & License ##
 
-Copyright 2010-2016 T. Graf
+Copyright 2010-2017 T. Graf
 
 Licensed under the **Apache License, Version 2.0** (the "License");
 you may not use this file except in compliance with the License.

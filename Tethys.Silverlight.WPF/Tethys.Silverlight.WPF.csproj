@@ -135,7 +135,6 @@
     <Resource Include="Resources\error.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Thumbs.db" />
     <None Include="Tethys.Silverlight.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

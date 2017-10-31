@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="ViewModelBase.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -86,7 +86,7 @@ namespace Tethys.Silverlight.MVVM
 #if SILVERLIGHT || SILVERLIGHT3 || WINDOWS_PHONE
                     isInDesignMode = DesignerProperties.IsInDesignTool;
 #else
-#if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
                     isInDesignMode = Windows.ApplicationModel.DesignMode.DesignModeEnabled;
 #else
                     var prop = DesignerProperties.IsInDesignModeProperty;
@@ -108,7 +108,7 @@ namespace Tethys.Silverlight.MVVM
         /// </summary>
         /// <param name="propertyName">The property name of the property that has
         /// changed.</param>
-#if NET45
+#if NET45 || UNIVERSAL_APP81 || WINDOWS_UWP
         protected virtual void RaisePropertyChanged([CallerMemberName] string propertyName = null)
 #else
         protected virtual void RaisePropertyChanged(string propertyName)
@@ -127,7 +127,7 @@ namespace Tethys.Silverlight.MVVM
         /// <param name="propertyName">The property name of the property that has
         /// changed.</param>
         /// <remarks>Exists due to legacy reasons.</remarks>
-#if NET45
+#if NET45 || UNIVERSAL_APP81 || WINDOWS_UWP
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
 #else
         protected virtual void OnPropertyChanged(string propertyName)

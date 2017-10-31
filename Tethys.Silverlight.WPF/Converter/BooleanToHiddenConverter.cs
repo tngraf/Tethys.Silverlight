@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="BooleanToHiddenConverter.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -28,9 +28,9 @@ namespace Tethys.Silverlight.Converter
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
-#if NETFX_CORE
-  using Windows.UI.Xaml;
-  using Windows.UI.Xaml.Data;
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Data;
 #else
     using System.Windows;
     using System.Windows.Data;
@@ -75,7 +75,7 @@ namespace Tethys.Silverlight.Converter
             return rv;
         } // Convert()
 
-#if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
         /// <summary>
         /// Converts the specified value.
         /// </summary>
@@ -89,8 +89,8 @@ namespace Tethys.Silverlight.Converter
         public object Convert(object value, Type targetType, object parameter,
           string text)
         {
-          return this.Convert(value, targetType, parameter, 
-            System.Globalization.CultureInfo.InvariantCulture);
+            return this.Convert(value, targetType, parameter,
+              System.Globalization.CultureInfo.InvariantCulture);
         } // Convert()
 
         /// <summary>
@@ -106,8 +106,8 @@ namespace Tethys.Silverlight.Converter
         public object ConvertBack(object value, Type targetType, object parameter,
           string text)
         {
-          return this.ConvertBack(value, targetType, parameter, 
-            System.Globalization.CultureInfo.InvariantCulture);
+            return this.ConvertBack(value, targetType, parameter,
+              System.Globalization.CultureInfo.InvariantCulture);
         } // ConvertBack()
 #endif
 

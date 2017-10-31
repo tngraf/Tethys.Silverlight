@@ -11,6 +11,8 @@ Basic Services and Resources Library for Silverlight, WPF, Windows Phone, etc.
 * Tethys.Silverlight.WinRt - library version for Windows RT apps
 * Tethys.Silverlight.WP8 - library version for Windows Phone 8
 * Tethys.Silverlight.WPF - library version for WPF
+* Tethys.Silverlight.UniversalWin81 - library version for Windows Phone (UWP) / Windows Phone 8.1
+* Tethys.Silverlight.UAP10 - library version for Universal Windows Platform
 
 ## Main Features ##
 

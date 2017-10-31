@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="StringToControlTemplateConverter.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -29,10 +29,10 @@ namespace Tethys.Silverlight.Converter
     using System;
     using System.Diagnostics;
     using System.Diagnostics.CodeAnalysis;
-#if NETFX_CORE
-  using Windows.UI.Xaml;
-  using Windows.UI.Xaml.Controls;
-  using Windows.UI.Xaml.Data;
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Controls;
+    using Windows.UI.Xaml.Data;
 #else
     using System.Windows;
     using System.Windows.Controls;
@@ -65,8 +65,8 @@ namespace Tethys.Silverlight.Converter
             try
             {
                 object obj;
-#if NETFX_CORE
-        obj = Application.Current.Resources[value];
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
+                obj = Application.Current.Resources[value];
 #else
                 obj = Application.Current.FindResource(value);
 #endif
@@ -81,38 +81,38 @@ namespace Tethys.Silverlight.Converter
             return ctrlTemplate;
         } // Convert()
 
-#if NETFX_CORE
-    /// <summary>
-    /// Converts the specified value.
-    /// </summary>
-    /// <param name="value">The value.</param>
-    /// <param name="targetType">Type of the target.</param>
-    /// <param name="parameter">The parameter.</param>
-    /// <param name="text">The text.</param>
-    /// <returns>
-    /// A converted value. If the method returns null, the valid null value is used.
-    /// </returns>
-    public object Convert(object value, Type targetType, object parameter,
-      string text)
-    {
-      return this.Convert(value, targetType, parameter, System.Globalization.CultureInfo.InvariantCulture);
-    } // Convert()
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
+        /// <summary>
+        /// Converts the specified value.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="targetType">Type of the target.</param>
+        /// <param name="parameter">The parameter.</param>
+        /// <param name="text">The text.</param>
+        /// <returns>
+        /// A converted value. If the method returns null, the valid null value is used.
+        /// </returns>
+        public object Convert(object value, Type targetType, object parameter,
+          string text)
+        {
+            return this.Convert(value, targetType, parameter, System.Globalization.CultureInfo.InvariantCulture);
+        } // Convert()
 
-    /// <summary>
-    /// Converts a value back.
-    /// </summary>
-    /// <param name="value">The value.</param>
-    /// <param name="targetType">Type of the target.</param>
-    /// <param name="parameter">The parameter.</param>
-    /// <param name="text">The text.</param>
-    /// <returns>
-    /// A converted value. If the method returns null, the valid null value is used.
-    /// </returns>
-    public object ConvertBack(object value, Type targetType, object parameter,
-      string text)
-    {
-      return this.ConvertBack(value, targetType, parameter, System.Globalization.CultureInfo.InvariantCulture);
-    } // ConvertBack()
+        /// <summary>
+        /// Converts a value back.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="targetType">Type of the target.</param>
+        /// <param name="parameter">The parameter.</param>
+        /// <param name="text">The text.</param>
+        /// <returns>
+        /// A converted value. If the method returns null, the valid null value is used.
+        /// </returns>
+        public object ConvertBack(object value, Type targetType, object parameter,
+          string text)
+        {
+            return this.ConvertBack(value, targetType, parameter, System.Globalization.CultureInfo.InvariantCulture);
+        } // ConvertBack()
 #endif
 
         /// <summary>

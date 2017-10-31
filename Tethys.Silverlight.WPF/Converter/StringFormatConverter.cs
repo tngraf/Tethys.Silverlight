@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="StringFormatConverter.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -27,19 +27,19 @@
 namespace Tethys.Silverlight.Converter
 {
     using System;
-#if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
     using Windows.UI.Xaml.Data;
 #else
     using System.Windows.Data;
-#endif    
-    
+#endif
+
     /// <summary>
     /// A converter that applies the parameter value as string format on the
     /// actual value.
     /// </summary>
     public class StringFormatConverter : IValueConverter
     {
-        #region IVALUECONVERTER MEMBERS
+#region IVALUECONVERTER MEMBERS
         /// <summary>
         /// Converts a value.
         /// </summary>
@@ -82,7 +82,7 @@ namespace Tethys.Silverlight.Converter
             throw new NotImplementedException();
         } // ConvertBack()
 
-#if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
         /// <summary>
         /// Converts the specified value.
         /// </summary>
@@ -96,7 +96,7 @@ namespace Tethys.Silverlight.Converter
         public object Convert(object value, Type targetType, object parameter,
           string language)
         {
-            return this.Convert(value, targetType, parameter, 
+            return this.Convert(value, targetType, parameter,
                 System.Globalization.CultureInfo.InvariantCulture);
         } // Convert()
 
@@ -113,10 +113,10 @@ namespace Tethys.Silverlight.Converter
         public object ConvertBack(object value, Type targetType, object parameter,
           string language)
         {
-            return this.ConvertBack(value, targetType, parameter, 
+            return this.ConvertBack(value, targetType, parameter,
                 System.Globalization.CultureInfo.InvariantCulture);
         } // ConvertBack()
 #endif
-        #endregion // IVALUECONVERTER MEMBERS
+#endregion // IVALUECONVERTER MEMBERS
     } // StringFormatConverter
 } // Tethys.Silverlight.Converter

@@ -15,7 +15,7 @@
 // ===========================================================================
 //
 // <copyright file="GridLengthConverter.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -33,7 +33,7 @@
 namespace Tethys.Silverlight.Converter
 {
     using System;
-#if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
     using Windows.UI.Xaml;
 #else
     using System.Windows;
@@ -53,7 +53,7 @@ namespace Tethys.Silverlight.Converter
         {
             // If we're NOT in silverlight, we have a gridlength converter
             // we can use.
-#if !SILVERLIGHT && !NETFX_CORE
+#if !SILVERLIGHT && !NETFX_CORE && !UNIVERSAL_APP81 && !WINDOWS_UWP
             // Create the standard windows grid length converter.
             var gridLengthConverter = new System.Windows.GridLengthConverter();
 

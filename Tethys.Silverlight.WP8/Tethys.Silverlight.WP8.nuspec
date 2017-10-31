@@ -2,11 +2,11 @@
 <package >
   <metadata>
     <id>Tethys.Silverlight.WP8</id>
-    <version>1.2.2</version>
+    <version>1.3.0</version>
     <title>Tethys.Silverlight.WP8</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
-	<copyright>Copyright (C) 2009-2017 T. Graf</copyright>
+  <copyright>Copyright (C) 2009-2017 T. Graf</copyright>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <projectUrl>https://github.com/tngraf/Tethys.Silverlight/</projectUrl>
     <iconUrl>http://www.4wp7.de/tethys/tethyb32.png</iconUrl>
@@ -18,16 +18,16 @@
   </metadata>
   <files>
     <file src="..\Export\Release\wp8\Tethys.Silverlight.WP8.pdb" target="lib\wp8" />
-	<file src="..\Export\Release\wp8\System.Windows.Interactivity.dll" target="lib\wp8" />
-	<file src="..\Export\Release\wp8\de\System.Windows.Interactivity.resources.dll" target="lib\wp8\de" />
-	<file src="..\Export\Release\wp8\en\System.Windows.Interactivity.resources.dll" target="lib\wp8\en" />
-	<file src="..\Export\Release\wp8\es\System.Windows.Interactivity.resources.dll" target="lib\wp8\es" />
-	<file src="..\Export\Release\wp8\fr\System.Windows.Interactivity.resources.dll" target="lib\wp8\fr" />
-	<file src="..\Export\Release\wp8\it\System.Windows.Interactivity.resources.dll" target="lib\wp8\it" />
-	<file src="..\Export\Release\wp8\ja\System.Windows.Interactivity.resources.dll" target="lib\wp8\ja" />
-	<file src="..\Export\Release\wp8\ko\System.Windows.Interactivity.resources.dll" target="lib\wp8\ko" />
-	<file src="..\Export\Release\wp8\ru\System.Windows.Interactivity.resources.dll" target="lib\wp8\ru" />
-	<file src="..\Export\Release\wp8\zh-Hans\System.Windows.Interactivity.resources.dll" target="lib\wp8\zh-Hans" />
-	<file src="..\Export\Release\wp8\zh-Hans\System.Windows.Interactivity.resources.dll" target="lib\wp8\zh-Hant" />
+    <file src="..\Export\Release\wp8\System.Windows.Interactivity.dll" target="lib\wp8" />
+    <file src="..\Export\Release\wp8\de\System.Windows.Interactivity.resources.dll" target="lib\wp8\de" />
+    <file src="..\Export\Release\wp8\en\System.Windows.Interactivity.resources.dll" target="lib\wp8\en" />
+    <file src="..\Export\Release\wp8\es\System.Windows.Interactivity.resources.dll" target="lib\wp8\es" />
+    <file src="..\Export\Release\wp8\fr\System.Windows.Interactivity.resources.dll" target="lib\wp8\fr" />
+    <file src="..\Export\Release\wp8\it\System.Windows.Interactivity.resources.dll" target="lib\wp8\it" />
+    <file src="..\Export\Release\wp8\ja\System.Windows.Interactivity.resources.dll" target="lib\wp8\ja" />
+    <file src="..\Export\Release\wp8\ko\System.Windows.Interactivity.resources.dll" target="lib\wp8\ko" />
+    <file src="..\Export\Release\wp8\ru\System.Windows.Interactivity.resources.dll" target="lib\wp8\ru" />
+    <file src="..\Export\Release\wp8\zh-Hans\System.Windows.Interactivity.resources.dll" target="lib\wp8\zh-Hans" />
+    <file src="..\Export\Release\wp8\zh-Hans\System.Windows.Interactivity.resources.dll" target="lib\wp8\zh-Hant" />
   </files> 
 </package>

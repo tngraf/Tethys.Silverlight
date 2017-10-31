@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Tethys.Silverlight.WinRt</id>
+    <id>Tethys.Silverlight.UAP10</id>
     <version>1.3.0</version>
-    <title>Tethys.Silverlight.WinRt</title>
+    <title>Tethys.Silverlight.UAP10</title>
     <authors>Thomas Graf</authors>
     <owners>Thomas Graf</owners>
   <copyright>Copyright (C) 2009-2017 T. Graf</copyright>
@@ -14,10 +14,10 @@
     <description>Basic Services and Resources Library for Silverlight and WPF</description>
     <releaseNotes></releaseNotes>
     <language>en-US</language>
-    <tags>Tethys Silverlight WinRT</tags>
+    <tags>Tethys Silverlight Universal Windows</tags>
   </metadata>
   <files>
-    <file src="..\Export\Release\netcore451\Tethys.Silverlight.WinRt.dll" target="lib\netcore451" />
-    <file src="..\Export\Release\netcore451\Tethys.Silverlight.WinRt.pdb" target="lib\netcore451" />
+    <file src="..\Export\Release\UAP10\Tethys.Silverlight.UAP10.dll" target="lib\uap" />
+    <file src="..\Export\Release\UAP10\Tethys.Silverlight.UAP10.pdb" target="lib\uap" />
   </files> 
 </package>

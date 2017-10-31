@@ -9,7 +9,7 @@
 // ===========================================================================
 //
 // <copyright file="DesignTime.cs" company="Tethys">
-// Copyright  2010-2015 by Thomas Graf
+// Copyright  2010-2016 by Thomas Graf
 //            All rights reserved.
 //            Licensed under the Apache License, Version 2.0.
 //            Unless required by applicable law or agreed to in writing, 
@@ -26,9 +26,13 @@
 
 namespace Tethys.Silverlight.MVVM
 {
+#if !NETFX_CORE && !UNIVERSAL_APP81 && !WINDOWS_UWP
     using System.ComponentModel;
+#endif
     using System.Diagnostics.CodeAnalysis;
+#if !NETFX_CORE && !UNIVERSAL_APP81 && !WINDOWS_UWP
     using System.Windows;
+#endif
 
     /// <summary>
     /// Static class for design time information.
@@ -49,14 +53,14 @@ namespace Tethys.Silverlight.MVVM
 #if SILVERLIGHT || SILVERLIGHT3 || WINDOWS_PHONE
                 return DesignerProperties.IsInDesignTool;
 #else
-  #if NETFX_CORE
+#if NETFX_CORE || UNIVERSAL_APP81 || WINDOWS_UWP
                 return Windows.ApplicationModel.DesignMode.DesignModeEnabled;
-  #else
+#else
                 var prop = DesignerProperties.IsInDesignModeProperty;
                 return (bool)DependencyPropertyDescriptor
                     .FromProperty(prop, typeof(FrameworkElement))
                     .Metadata.DefaultValue;
-  #endif
+#endif
 #endif
             }
         } // IsInDesignModeStatic

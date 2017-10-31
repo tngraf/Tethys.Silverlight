@@ -184,3 +184,4 @@ FakesAssemblies/
 
 # Windows Image thumbnail database
 Thumbs.db
+.vs/

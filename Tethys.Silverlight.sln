@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4A2E09A4-AD94-4D36-B4FC-3DF9EF186BE5}"
 EndProject
@@ -221,7 +221,6 @@ Global
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|ARM.ActiveCfg = Release|ARM
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|ARM.Build.0 = Release|ARM
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|x64.ActiveCfg = Release|x64
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|x64.Build.0 = Release|x64
 		{8AB9AC27-2873-4518-9844-5B3B3A8705A9}.Release|x86.ActiveCfg = Release|x86
